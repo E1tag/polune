@@ -85,32 +85,40 @@ a {
   display: flex;
   font-size: 12px;
 }
-.menu .dep1>li {
+.menu .dep1 > li {
   display: inline-block;
   width: 100px;
   height: 40px;
   vertical-align: top;
   text-align: center;
 }
+
+
 .menu .dep1>li:hover>a {
   color: rgba(0, 0, 0, .5);
   height: 38px;
   border-bottom: 2px solid rgba(255, 153, 51, 1);
 }
 .menu .dep1>li:hover>.dep2 {
-  display: block;
-  position: absolute;
-  left: 0;
+  /* display: block; */
+  visibility: visible;
+  opacity: 1;
+  
 }
 .menu .dep1>li>a {
   display: block;
   padding: 12px 0;
 }
 .menu .dep2 {
-  display: none;
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  top: 110px;
   background-color: #ddd;
   width: 100vw;
   height: 300px;
+  transition: all 0.5s;
 }
 .menu .dep2 a {
   /* display: block; */
