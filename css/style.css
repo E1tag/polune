@@ -48,7 +48,7 @@ a {
   display: flex;
   background: var(--notice-bg);
   color: var(--notice-txt);
-  font-size: 12px;
+  font-size: 0.6em;
   align-items: center;
   justify-content: center;
   height: 36px;
@@ -84,6 +84,7 @@ a {
 .menu .dep1 {
   display: flex;
   font-size: 12px;
+  width: 400px;
 }
 .menu .dep1 > li {
   display: inline-block;
@@ -114,10 +115,10 @@ a {
   position: absolute;
   left: 0;
   top: 110px;
-  background-color: #ddd;
+  background: #f0f0f0;
   width: 100vw;
   height: 300px;
-  transition: all 0.5s;
+  transition: all 0.5s ease;
 }
 .menu .dep2 a {
   /* display: block; */
@@ -367,14 +368,14 @@ label.right {
 .gallerylist>ul>li {
   display: inline-block;
   vertical-align: top;
-  width: 33.3%;
+  width: 300px;
 }
 
 .gallerylist>ul>li>a {
   display: block;
   width: auto;
   text-decoration: none;
-  margin: 5px;
+  margin: 5px 30px;
 }
 
 .gallerylist>ul>li>a .screen {
