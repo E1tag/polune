@@ -50,7 +50,7 @@ table {
 /* 개인 설정 */
 :root {
   /* 레이아웃 칼라 */
-  --main-bg: #fff;
+  --default-bg: #fff;
   --notice-bg: #001970;
   --cartier-bg: #c32939;
 
