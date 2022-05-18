@@ -6,10 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Polune&#174;ジュエリー公式通販</title>
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="slide.css" />
 </head>
 <body>
 
-  <header class="header">
+<header class="header">
 
   <!-- 상단 알림 시작-->
   <section class="notice">
@@ -243,33 +244,53 @@
       <ul class="slidelist">
         <li class="slideitem">
           <figure>
-            <label for="slide04" class="left"><i class='bx bx-chevron-left'></i></label>
-            <label for="slide02" class="right"><i class='bx bx-chevron-right'></i></label>
+            <!-- <label for="slide04" class="left"><span class="material-symbols-outlined">arrow_back_ios</span></label>
+            <label for="slide02" class="right"><span class="material-symbols-outlined">arrow_forward_ios</span></label> -->
             <a><img src="https://image.rakuten.co.jp/polune/cabinet/logo/logo-polune-960.jpg"></a>
           </figure>
         </li>
         <li class="slideitem">
           <figure>
-            <label for="slide01" class="left"><i class='bx bx-chevron-left'></i></label>
-            <label for="slide03" class="right"><i class='bx bx-chevron-right' ></i></label>
+            <!-- <label for="slide01" class="left"><i class='bx bx-chevron-left'></i></label>
+            <label for="slide03" class="right"><i class='bx bx-chevron-right' ></i></label> -->
             <a><img src="https://image.rakuten.co.jp/polune/cabinet/logo/logo-polune-960.jpg"></a>
           </figure>
         </li>
         <li class="slideitem">
           <figure>
-            <label for="slide02" class="left"><i class='bx bx-chevron-left'></i></label>
-            <label for="slide04" class="right"><i class='bx bx-chevron-right'></i></label>
+            <!-- <label for="slide02" class="left"><i class='bx bx-chevron-left'></i></label>
+            <label for="slide04" class="right"><i class='bx bx-chevron-right'></i></label> -->
             <a><img src="https://image.rakuten.co.jp/polune/cabinet/logo/logo-polune-960.jpg"></a>
           </figure>
         </li>
         <li class="slideitem">
           <figure>
-            <label for="slide03" class="left"><i class='bx bx-chevron-left'></i></label>
-            <label for="slide01" class="right"><i class='bx bx-chevron-right'></i></label>
+            <!-- <label for="slide03" class="left"><i class='bx bx-chevron-left'></i></label>
+            <label for="slide01" class="right"><i class='bx bx-chevron-right'></i></label> -->
             <a><img src="https://image.rakuten.co.jp/polune/cabinet/logo/logo-polune-960.jpg"></a>
           </figure>
         </li>
       </ul>
+
+      <ul class="slidecontrol">
+        <li class="control01">
+          <label for="slide04" class="left"><span class="material-symbols-outlined">arrow_back_ios</span></label>
+          <label for="slide02" class="right"><span class="material-symbols-outlined">arrow_forward_ios</span></label>
+        </li>
+        <li class="control02">
+          <label for="slide01" class="left"><span class="material-symbols-outlined">arrow_back_ios</span></label>
+          <label for="slide03" class="right"><span class="material-symbols-outlined">arrow_forward_ios</span></label>
+        </li>
+        <li class="control03">
+          <label for="slide02" class="left"><span class="material-symbols-outlined">arrow_back_ios</span></label>
+          <label for="slide04" class="right"><span class="material-symbols-outlined">arrow_forward_ios</span></label>
+        </li>
+        <li class="control04">
+          <label for="slide03" class="left"><span class="material-symbols-outlined">arrow_back_ios</span></label>
+          <label for="slide01" class="right"><span class="material-symbols-outlined">arrow_forward_ios</span></label>
+        </li>
+      </ul>
+
       <ul class="paginglist">
         <li>
           <label for="slide01"></label>
@@ -326,6 +347,65 @@
         </li>
       </ul>
     </article>
+
+    <div>
+
+      <span id="sl_play" class="sl_command">&nbsp;</span>
+      <span id="sl_pause" class="sl_command">&nbsp;</span>
+      <span id="sl_i1" class="sl_command sl_i">&nbsp;</span>
+      <span id="sl_i2" class="sl_command sl_i">&nbsp;</span>
+      <span id="sl_i3" class="sl_command sl_i">&nbsp;</span>
+      <span id="sl_i4" class="sl_command sl_i">&nbsp;</span>
+    
+      <section id="slideshow">
+	
+        <a class="commands prev commands1" href="#sl_i4" title="Go to last slide">&lt;</a>
+        <a class="commands next commands1" href="#sl_i2" title="Go to 2nd slide">&gt;</a>
+        <a class="commands prev commands2" href="#sl_i1" title="Go to 1rst slide">&lt;</a>
+        <a class="commands next commands2" href="#sl_i3" title="Go to 3rd slide">&gt;</a>
+        <a class="commands prev commands3" href="#sl_i2" title="Go to 2nd slide">&lt;</a>
+        <a class="commands next commands3" href="#sl_i4" title="Go to 4th slide">&gt;</a>
+        <a class="commands prev commands4" href="#sl_i3" title="Go to 3rd slide">&lt;</a>
+        <a class="commands next commands4" href="#sl_i1" title="Go to first slide">&gt;</a>
+        
+        <a class="play_commands pause" href="#sl_pause" title="Maintain paused">Pause</a>
+        <a class="play_commands play" href="#sl_play" title="Play the animation">Play</a>
+      
+        <div class="container">
+          <div class="c_slider"></div>
+          <div class="slider">
+            <figure>
+              <img src="img/dummy-640x310-1.jpg" alt="" width="640" height="310" />
+              <figcaption>The mirror of soul</figcaption>
+            </figure><!--
+            --><figure>
+              <img src="img/dummy-640x310-2.jpg" alt="" width="640" height="310" />
+              <figcaption>Let's cross that bridge when we come to it</figcaption>
+            </figure><!--
+            --><figure>
+              <img src="img/dummy-640x310-3.jpg" alt="" width="640" height="310" />
+              <figcaption>Sushi<em>(do)</em> time</figcaption>
+            </figure><!--
+            --><figure>
+              <img src="img/dummy-640x310-4.jpg" alt="" width="640" height="310" />
+              <figcaption>Waking Life</figcaption>
+            </figure>
+          </div>
+        </div>
+      
+        <span id="timeline"></span>
+      
+        <ul class="dots_commands"><!--
+          --><li><a title="Show slide 1" href="#sl_i1">Slide 1</a></li><!--
+          --><li><a title="Show slide 2" href="#sl_i2">Slide 2</a></li><!--
+          --><li><a title="Show slide 3" href="#sl_i3">Slide 3</a></li><!--
+          --><li><a title="Show slide 4" href="#sl_i4">Slide 4</a></li>
+        </ul>
+      
+      </section>
+
+    </div>
+
   </main>
 
 
